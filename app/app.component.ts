@@ -18,6 +18,21 @@ export class AppComponent {
     this.index =this.get.index;
     
   }
+  /*head_data=[];
+  getData(event){
+    this.getlocaldata.addData('d1',this.head_data);
+  }
+  constructor(public getlocaldata:GetdataService){
+  }
+    data;
+    ngOnInit(){
+      this.data =(this.getlocaldata.showData('d1')).split(',');
+      if(this.data!=''){
+           this.head_data=this.data;
+      }
+      
+    }*/
+  
   /*hehehe=[1,2,3,4];
   // 插值表达式
   title = 'hello world';

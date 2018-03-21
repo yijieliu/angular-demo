@@ -3,11 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class GetdataService {
   
-  /*todo=this.get('todo');
-  done=this.get('done');*/
   constructor() { }
   
-  list=[];
+ list=[];
   //get(url:number){
     //$.ajax({
       //url:url,
@@ -22,18 +20,14 @@ export class GetdataService {
     getIndex(i){
       this.index =i;
     }
-  
-   /* get(str){
-        console.log('get');
-        var arr = JSON.parse(localStorage.getItem(str))  || [];
-        return arr;
-      }
-      set(key,val){
-        // localStorage.clear();
-        console.log('set');
-        localStorage.setItem(key,JSON.stringify(val));
-        console.log('ser-todo:',this.todo);
-        console.log('ser-done:',this.done);
-      }*/
+    /*list:any;
+    addData(key:string,data:any){
+      localStorage.setItem(key,data);
+    }
+    showData(key){
+      this.list=localStorage.getItem(key);
+      return this.list;
+    }*/
+
 
 }
