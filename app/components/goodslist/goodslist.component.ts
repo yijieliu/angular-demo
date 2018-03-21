@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { RouterModule, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router'; 
+
 @Component({
   selector: 'app-goodslist',
   templateUrl: './goodslist.component.html',
@@ -6,11 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GoodslistComponent implements OnInit {
 
-  constructor() { 
+  constructor(public router:Router) { 
 
   }
-  @Input() list:Array<any>;
+  //@Input() list:number[];
+  list:number[]=[1,2,3,4,5];
   ngOnInit() {
-    
-  }
+    //console.log(this.router.snapshot.params.goodsId);
+  
+}
+goDetail(idx){
+    this.router.navigate(['/gooddetail',idx]);
+}
 }

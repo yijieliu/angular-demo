@@ -11,5 +11,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  con;
+  arrD =[1,2,3,4,5];
+  getI(e){
+    this.con=e
+  }
+  click(){
+    this.arrD[0] =1111;
+  }
 }

@@ -1,7 +1,7 @@
 <section>
   <h2>正在进行
     <span id="todolist">{{tolist.length}}</span>
-  </h2>
+  </h2>{{num}}
   <li id="todolist" class="demo-box" *ngFor="let item of tolist;let i =index;">
     <input type="checkbox" (change)="change(i)">{{item}}
     <button (click)="delData(i)">删除</button>

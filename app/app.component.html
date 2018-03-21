@@ -1,13 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
+<a routerLink="/goodslist" routerLinkActive="active">goodslist</a>
+<a routerLink="/todolist/100/200" routerLinkActive="active">todolist</a>
+<a routerLink="/home" routerLinkActive="active">home</a>
+<!--<a routerLink="{{'/todolist/' +num}}" routerLinkActive="active">todolist</a>-->
+<!--<a [routerLink]="['/todolist/',100,200]" routerLinkActive="active">todolist</a>-->
+
+<router-outlet></router-outlet>
+
+
+
 <!--<app-a [arrData]="arrD" (getIndex)="getI($event)"></app-a>
 <h1>{{idx}}</h1>
 <h2>{{index}}</h2> -->
 <!--<app-a [title]="'hahaha'">
   <span class="box">这是一个span</span>
 </app-a>-->
-<app-head (event) ="getData($event)"></app-head>
+<!--<app-head (event) ="getData($event)"></app-head>
 <app-body [tolist] ="head_data"></app-body>
+<h2>{{index}}</h2>-->
 <div style="text-align:center">
   <!--  插值表达式  -->
   <!-- <h1>
@@ -78,8 +89,8 @@
 
 <!-- 组件交互 -->
 <!-- 父组件到子组件 -->
-<!-- <app-goodslist [list]="arr1"></app-goodslist> -->
-<!-- <app-goodslist [list]="goodslist"></app-goodslist> -->
+<!--<app-goodslist [list]="arr1"></app-goodslist> -->
+ <!--<app-goodslist [list]="goodslist"></app-goodslist> -->
 <!-- 父组件到子组件 -->
 <!-- <div class="box">
   <h2>你同意五一放七天假吗</h2>

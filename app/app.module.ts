@@ -12,6 +12,11 @@ import { HomeComponent } from './components/home/home.component';
 import { GetdataService } from './services/getdata.service';
 import { HeadComponent } from './components/head/head.component';
 import { BodyComponent } from './components/body/body.component';
+import { RouterModule } from '@angular/router';
+import { NopageComponent } from './components/nopage/nopage.component';
+import { GooddetailComponent } from './components/gooddetail/gooddetail.component';
+
+
 
 
 @NgModule({
@@ -24,10 +29,21 @@ import { BodyComponent } from './components/body/body.component';
     HomeComponent,
     HeadComponent,
     BodyComponent,
+    NopageComponent,
+    GooddetailComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {path:'home',component:HomeComponent},
+      {path:'todolist/:id/:num',component: TodolistComponent },
+      {path:'goodslist',component:GoodslistComponent},
+      {path:'gooddetail/:goodsId',component:GooddetailComponent},
+      {path:'',redirectTo:'home',pathMatch:'full'},
+      {path:'**',component:NopageComponent}
+    ])
+
   ],
   providers: [GetdataService],
   bootstrap: [AppComponent]

@@ -6,17 +6,17 @@ import { GetdataService } from './services/getdata.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  /*constructor(public get:GetdataService){
+  head_data=[];
+    getData(event){
+      this.head_data.push(event);
+    }
+  constructor(public get:GetdataService){
   
   }
   index:number;
   ngOnInit(){
-    this.index =this.get.index;*/
-    head_data=[];
-    getData(event){
-      this.head_data.push(event);
-    }
+    this.index =this.get.index;
+    
   }
   /*hehehe=[1,2,3,4];
   // 插值表达式
@@ -107,5 +107,5 @@ export class AppComponent {
    }
    click(){
      this.arrD[0] =1111;
-   }
-}*/
+   }*/
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-todolist',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public router:ActivatedRoute) { }
+  num;
   ngOnInit() {
+    //this.num=this.router.snapshot.params;
+    console.log(this.router.snapshot.params.id,this.router.snapshot.params.num);
+   
   }
   tolist = [];
   comlist = [];
