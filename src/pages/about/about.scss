@@ -1,0 +1,40 @@
+page-about {
+    ion-navbar{
+        height: 50px;
+    }
+    ion-navbar a img{
+        height: 50px;
+        position: relative;
+        top: 20px;
+    }
+    ion-title{
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        bottom: 28px;
+    }
+    background-color: #f9f9f9;
+}
+ion-content button{
+    float: left;
+    position: relative;
+    top: 30px;
+    border: 2px solid #e5e5e5;
+    
+}
+ion-content button img{
+   width:48px;
+   height: 48px;
+   position: relative;
+   left: 40px;
+   top:-10px;
+ 
+}
+ion-content button p{
+    color: black;
+    font-size: 20px;
+    display: block;
+    position: relative;
+    top:28px;
+    right: 20px;
+}

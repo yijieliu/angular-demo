@@ -1,0 +1,24 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>login</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content padding style="text-align:center">
+    <img class="denglu"  src="assets/imgs/denglu.png">
+    <h2>全球不良资产超级综合服务平台</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label><ion-img src="assets/imgs/denglu1.png"></ion-img>用户名</ion-label>
+        <ion-input id="username" (input)="changeUnm($event)" [value]="username"></ion-input>
+      </ion-item>
+      <ion-item>
+          
+        <ion-label ><ion-img src="assets/imgs/denglu2.png"></ion-img>密码</ion-label>
+        <ion-input type="password" (input)="changePwd($event)" [value]="password"></ion-input>{{password}}
+      </ion-item>
+      <button ion-button round outline color="yel" style="width:260px;display:block;margin:0 auto" (click)="request()">登录</button>
+      <span><a>忘记密码?</a></span>
+    </ion-list>  
+  </ion-content>

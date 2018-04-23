@@ -1,0 +1,23 @@
+page-login {
+    ion-navbar{
+        height: 50px;
+    }
+    ion-navbar a img{
+        height: 50px;
+        position: relative;
+        top: 20px;
+    }
+    ion-title{
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        bottom: 28px;
+    }
+}
+.list-avatar-page {
+    ion-note {
+      font-size: 12px;
+      align-self: flex-start;
+      margin-top: 14px;
+    }
+  }
